@@ -1,0 +1,25 @@
+background(186, 145, 20); // wooden table
+fill(0, 29, 250);
+ellipse(200, 200, 350, 350); // plate
+fill(0, 89, 140);
+ellipse(200, 200, 300, 300);
+noStroke();
+fill(255, 255, 255); //egg whites
+ellipse(151, 166, 71, 157);
+noStroke();
+fill(222, 247, 0); //egg yokes
+ellipse(151, 141, 38, 32);
+
+fill(255, 255, 255); //egg whites
+ellipse(230, 213, 88, 130);
+
+fill(222, 247, 0); //egg yokes
+ellipse(227, 196, 38, 59);
+stroke(0, 0, 0);
+fill(255, 149, 0);//bread
+triangle(74,254,132,241,143,314);
+triangle(69,254,83,327,143,323);
+
+//I made eyes and a bread as a dinner/breakfast because mcDonalds does all day breakfast now, but ironically it looks like a bird hahah. eggs are birds.
+
+
