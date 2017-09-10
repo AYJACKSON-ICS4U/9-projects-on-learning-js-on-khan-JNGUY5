@@ -1,0 +1,35 @@
+var xPos = 59;
+var yPos = 40;
+var xpos2=338;
+var ypos2=350;
+var zpos2=352;
+
+draw = function() 
+{
+
+    background(29, 40, 115);
+        fill (247, 247, 247);
+        noStroke();
+ ellipse (122,112,4,4);
+ ellipse (61,192,4,4);
+ ellipse (245,288,4,4);
+ ellipse (233,81,4,4);
+ ellipse (206,143,4,4);
+ ellipse (95,118,4,4);
+ ellipse (141,216,4,4);
+ ellipse (300,171,4,4);
+ ellipse (252,219,4,4);
+ ellipse (89,351,4,4);
+ fill(255, 242, 0);
+    ellipse(xPos, yPos, 10, 10);
+    xPos +=2;
+    yPos +=1;
+     triangle(xpos2,xpos2-256,ypos2,ypos2-255, zpos2, zpos2-270);
+     xpos2  -=0.25;
+     ypos2 -=0.25;
+     zpos2 -=0.25;
+
+};
+
+
+
