@@ -1,0 +1,46 @@
+var bodyX = 210;
+var bodyY = 232;
+var bodyW = 99;
+var bodyH = bodyW/2;
+
+draw = function() {
+    stroke(5, 5, 5);
+    background(207, 254, 255);
+    fill(240, 209, 36);
+    ellipse(bodyX, bodyY, bodyW, 111); // body?
+    ellipse(bodyX, bodyY-70, bodyW/2, 47); // face?
+    //I made a cool pikachu whouses widen move.
+    noStroke();
+    rect(bodyX +42, bodyY+4,bodyW-59,18);//yellow tail parts
+    rect(bodyX+74,bodyY+22,bodyW-70,-48);
+    fill(105, 64, 9);
+    rect(bodyX+94,bodyY-41,bodyW-67,27);//brown tail
+    fill(255, 0, 0);
+    ellipse(bodyX-16,bodyY-66,bodyW-91,8);//red cheek things
+    ellipse(bodyX+16,bodyY-66,bodyW-91,8);
+    fill(240, 209, 36);
+    ellipse(bodyX-32,bodyY+45,bodyW-82,56);//leggs
+    ellipse(bodyX+30,bodyY+45,bodyW-82,56);
+    ellipse(bodyX-46,bodyY-33,bodyW-37,15);//arms
+    ellipse(bodyX+46,bodyY-33,bodyW-37,16);
+    fill(255, 255, 255);
+    ellipse(bodyX-13,bodyY-80,bodyW-87,15);//eyes white
+    ellipse(bodyX+12,bodyY-80,bodyW-87,15);
+    fill(0, 0, 0);
+    ellipse(bodyX-13,bodyY-80,bodyW-91,-7);//eyesblack
+    ellipse(bodyX+13,bodyY-80,bodyW-91,-7);
+    fill(255, 0, 0);
+    ellipse(bodyX+3,bodyY-58,bodyW-79,10);//mouthred
+    fill(240, 104, 104);
+    ellipse(bodyX+3,bodyY-58,bodyW-89,5);//mouthpink
+    fill(240, 209, 36);
+    ellipse(bodyX+21,bodyY-97,bodyW-89,37); //ears yellow
+    ellipse(bodyX-21,bodyY-97,bodyW-89,37);
+    fill(0, 0, 0);
+    ellipse(bodyX+21,bodyY-108,bodyW-89,18); 
+    ellipse(bodyX-21,bodyY-108,bodyW-89,18);//earsblack
+    ellipse(bodyX+1,bodyY-70,bodyW-98,1);//nose
+    bodyW+=0.5;   
+    
+};   
+ 
