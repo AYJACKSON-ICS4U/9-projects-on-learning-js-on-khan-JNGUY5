@@ -1,0 +1,33 @@
+
+var DRAWFISHY =function(centerX,centerY){
+
+    var bodyLength = 118;
+    var bodyHeight = 74;
+    var bodyColor = color(random(20,255), random(20,275),random(20,285));
+    
+    background(random(20,255), random(20,275),random(20,285));
+    
+    noStroke();
+    fill(bodyColor);
+    // body
+    ellipse(centerX, centerY, bodyLength, bodyHeight);
+    // tail
+    var tailWidth = bodyLength/5;
+    var tailHeight = bodyHeight/1;
+    triangle(centerX-bodyLength/8, centerY,
+             centerX-bodyLength/6-tailWidth, centerY-tailHeight,
+             centerX-bodyLength/99-tailWidth, centerY+tailHeight);
+    // eye
+    fill(33, 33, 33);
+    ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5); 
+};  
+    
+
+    
+
+
+
+mouseClicked = function(){
+    DRAWFISHY(mouseX,mouseY);
+};
+ 
