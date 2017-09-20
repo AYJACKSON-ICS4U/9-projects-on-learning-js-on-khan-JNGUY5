@@ -1,0 +1,34 @@
+fill(0, 0, 0);
+ellipse(200, 200, 375, 375);
+fill(60, 0, 255);
+triangle(200, 104, 280, 280, 120, 280);
+fill(255, 255, 255);
+var answer = round(random(1, 5));
+ if (answer===1){
+        
+        text( "DABBING WILL SOON",141,254);
+        text("BE UNBANNED",159,271);
+    }
+    
+     else if (answer===2){
+        
+        text( "cool",179,200);
+        text("runnings",159,229);
+    }
+     else if (answer===3){
+        
+        text( "flash Mcqueen",164,200);
+        text("lightning Mcqueen",154,229);
+    }
+     else if (answer===4){
+        
+        text( "neVer judge",170,200);
+        text("A boOk by iTs covEr",152,243);
+    }
+     else if (answer===5){
+        
+        text( "DAB ON",175,200);
+        text("HATERS",175,229);
+    }
+    
+    
