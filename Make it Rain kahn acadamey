@@ -1,0 +1,19 @@
+var xPositions = [random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400)];
+var yPositions = [random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400),random(10,400)];
+
+draw = function() {
+    background(random(20,255), random(20,275),random(20,285));
+
+    for (var i = 0; i < xPositions.length; i++) {
+        noStroke();
+        fill(random(20,255), random(20,275),random(20,285));
+        ellipse(xPositions[i], yPositions[i], 10.0, 62);
+        yPositions[i] += 8;
+        
+         if(yPositions[i] > 400) {
+            yPositions[i] = 10;
+        }
+    }
+   
+    
+};
