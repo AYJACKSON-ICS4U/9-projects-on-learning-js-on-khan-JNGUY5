@@ -1,0 +1,40 @@
+var book = [
+    {
+    title: "The Giver",
+    stars: 4,
+    review :"good"
+    },
+    {
+    title: "The Giver2",
+    stars: 4,
+    review :"bad"
+    },
+    {
+    title: "The Giver3",
+    stars: 4,
+    review :"better"
+    }
+];
+    
+
+//////ADD BOOK SHELF
+for (var k=0;k<2;k++)
+{
+    
+    fill(random(0,255),random(0,255),random(0,255));
+rect(0,122+ k*132 , width, 9);
+}
+// draw shelf
+
+
+// draw one book
+for (var g=0;g<3;g++){
+    fill(214, 255, 219);
+    rect(19+g*141, 143, 104, 110);
+    fill(0, 0, 0);
+    text(book[g].title, 29 + g*152, 164, 70, 100);
+    text(book[g].review, 35 + g*150, 194, 95, 18);
+    for (var s = 0; s < book[g].stars; s++) {
+    image(getImage("cute/Star"), 19 +s*20 + g* 145, 213, 26, 30);
+}  
+}
